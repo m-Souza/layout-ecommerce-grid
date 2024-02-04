@@ -1,0 +1,159 @@
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+.about{
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgb(209 154 72);
+}
+
+main{
+    grid-area: main;
+}
+
+header{
+    grid-area: header;
+}
+
+aside{
+    grid-area: aside;
+    background-color: rgba(210, 216, 223, 0.911);
+    padding: 25px 0 0 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    color: white;
+    background-color: #333;
+    bottom: 0px;
+}
+
+footer p{
+    padding: 5px;
+}
+
+body{
+    display: grid;
+    grid-template-areas:
+    'header header header header header header header header header'
+    'aside main main main main main main main main'
+    'footer footer footer footer footer footer footer footer footer'
+    ;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Nota al revisor: Se ha optado por un layout de 4 columnas en lugar de 3 como la maqueta de referencia, únicamente por temas visualies, ya que 3 columnas en pantallas grandes resultan en cards demasiado grandes */
+.catalog-grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    background-color: rgba(210, 216, 223, 0.911);
+    min-height: 100vh;
+    padding: 15px;
+}
+
+.list-item{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.category-number{
+    color: #888;
+    padding-left: 5px;
+}
+
+aside h1{
+    padding-bottom: 5px;
+    font-size: larger;
+}
+
+.product-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: rgb(238, 238, 238);
+    border-radius: 5px;
+}
+
+.img{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 1;
+}
+
+.image1{
+    background-image: url("https://m-souza.github.io/layout-ecommerce-grid/assets/img/nombre_personalizado.png");
+}
+.image2{
+    background-image: url("https://m-souza.github.io/layout-ecommerce-grid/assets/img/caja_recuerdos.jpeg");
+}
+.image3{
+    background-image: url("https://m-souza.github.io/layout-ecommerce-grid/assets/img/kit_flores_perchero.jpeg");
+}
+.image4{
+    background-image: url("https://m-souza.github.io/layout-ecommerce-grid/assets/img/recuerdo_nacimiento.png");
+}
+.image5{
+    background-image: url("https://m-souza.github.io/layout-ecommerce-grid/assets/img/banderin_nombre.jpeg");
+}
+.image6{
+    background-image: url("https://m-souza.github.io/layout-ecommerce-grid/assets/img/cumplemes.jpeg");
+}
+.image7{
+    background-image: url("https://m-souza.github.io/layout-ecommerce-grid/assets/img/espejo_infantil.jpeg");
+}
+
+.button-buy{
+    min-width: 100%;
+    padding: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: medium;
+    background-color:hsl(190.38deg 47.42% 41.23%);
+    color: aliceblue;
+}
+
+.button-buy:hover{
+    background-color: rgb(209 154 72);
+    color: black;
+}
+
+.product-name{
+    font-size: larger;
+    font-weight: bolder;
+    padding: 2px;
+}
+
+.product-price{
+    font-size: small;
+    padding: 2px;
+}
